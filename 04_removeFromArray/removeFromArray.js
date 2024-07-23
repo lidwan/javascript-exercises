@@ -1,7 +1,7 @@
-const removeFromArray = function(A) {
-    for(let i = 0; i < arguments.length; i++){
+const removeFromArray = function(A, ...args) {
+    for(let i = 0; i < args.length; i++){
         for(let j = 0; j < A.length; j++){
-            while(A[j] === arguments[i]) {
+            while(A[j] === args[i]) {
                 A.splice(j, 1);
             }
         }
